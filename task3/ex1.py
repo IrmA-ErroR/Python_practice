@@ -2,3 +2,10 @@
 # размере и типе файловой системы (модуль psutil).
 import psutil
 
+disks = psutil.disk_partitions()
+
+# информация о каждом диске
+for sdiskpart in disks:
+    print(sdiskpart)
+    break
+
