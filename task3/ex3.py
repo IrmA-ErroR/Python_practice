@@ -12,7 +12,7 @@ import re
 def create_json_file(file_name, data):
     with open(file_name, 'w') as file:
         json.dump(data, file, indent=4)
-    print(f"Файл {file_name} создан и данные записаны.")
+    print(f"Файл {file_name} создан и данные записаны")
 
 def read_json_file(file_name):
     with open(file_name, 'r') as file:

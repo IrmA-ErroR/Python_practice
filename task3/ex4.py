@@ -12,7 +12,7 @@ import re
 def create_xml_file(file_name, root_element):
     tree = ET.ElementTree(root_element)
     tree.write(file_name)
-    print(f"Файл {file_name} создан и данные записаны.")
+    print(f"Файл {file_name} создан и данные записаны")
 
 def read_xml_file(file_name):
     if os.path.exists(file_name):
