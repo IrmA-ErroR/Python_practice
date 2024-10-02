@@ -25,16 +25,20 @@ def delete_file(file_name):
         print(f"Файл {file_name} не существует")
 
 
+def main():
+    file_name = "test.txt"
 
-file_name = "test.txt"
+    user_input = input("Введите строку для записи в файл: ")
 
-user_input = input("Введите строку для записи в файл: ")
+    create_file(file_name, user_input)
 
-create_file(file_name, user_input)
+    print(f"Строка записана в файл {file_name}")
 
-print(f"Строка записана в файл {file_name}")
+    content = read_file(file_name)
+    print(f"Содержимое файла:\n\t{content}")
 
-content = read_file(file_name)
-print(f"Содержимое файла:\n\t{content}")
+    delete_file(file_name)
 
-delete_file(file_name)
+
+if __name__ == "__main__":
+    main()
